@@ -88,6 +88,6 @@ const EpdDisplay_t ED103TC2 = {
     .height = 1404,
     .bus_width = 16,
     .bus_speed = 11,
-    .default_waveform = &epdiy_ED047TC2,
+    .default_waveform = &epdiy_ED103TC2,
     .display_type = DISPLAY_TYPE_ED097TC2,
 };
