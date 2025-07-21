@@ -53,4 +53,6 @@ unsigned tps_vcom_kickback_rdy();
  */
 int8_t tps_read_thermistor(i2c_port_t i2c_num);
 
+void tps65185_debug_status(i2c_port_t i2c_num);
+
 #endif  //  TPS65185_H
