@@ -124,6 +124,7 @@ enum EpdRotation {
     EPD_ROT_PORTRAIT = 1,
     EPD_ROT_INVERTED_LANDSCAPE = 2,
     EPD_ROT_INVERTED_PORTRAIT = 3,
+    EPD_MIRROR_X = 4,
 };
 
 /// Possible failures when drawing.

@@ -68,7 +68,10 @@ Coord_xy _rotate(uint16_t x, uint16_t y) {
             _swap_int(x, y);
             y = epd_height() - y - 1;
             break;
-    }
+        case EPD_MIRROR_X:
+            x = epd_width() - x - 1;
+            break;
+    }   
     Coord_xy coord = { x, y };
     return coord;
 }
@@ -398,6 +401,7 @@ int epd_rotated_display_width() {
             break;
         case EPD_ROT_INVERTED_LANDSCAPE:
         case EPD_ROT_LANDSCAPE:
+        case EPD_MIRROR_X:
             break;
     }
     return display_width;
@@ -414,6 +418,7 @@ int epd_rotated_display_height() {
             break;
         case EPD_ROT_INVERTED_LANDSCAPE:
         case EPD_ROT_LANDSCAPE:
+        case EPD_MIRROR_X:
             break;
     }
     return display_height;
